@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Neto</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="flex items-center justify-center min-h-screen bg-red-100">
+        <div class="relative flex flex-col m-6 space-y-8 bg-white shadow-2xl md:flex-row md:space-y-0">
+            <div class="flex flex-col justify-center p-8 md:p-14">
+                <span class="mb-3 text-4xl font-bold ">Bienvenido</span>
+                <span class="font-light text-gray-800 mb-8">Bienvenido de nuevo, ingrese sus datos por favor</span>
+                <form>
+                    <div class="py-4">
+                        <span class="mb-2 text-xl font-semibold">Email</span>
+                        <input type="email"
+                            class="w-full p-1.5 border border-gray-500 rounded-md placeholder:font-light placeholder:text-gray-500"
+                            name="email" id="email" required />
+                    </div>
+
+                    <div class="py-2">
+                        <span class="mb-2 text-xl font-semibold">Contraseña</span>
+                        <input type="password" required name="pass" id="pass" class="w-full p-1.5 border border-gray-500 rounded-md placeholder:font-light placeholder:text-gray-500" />
+                    </div>
+                    <div class="flex justify-between w-full py-4">
+                        <div class="mr-24">
+                            <input type="checkbox" name="ch" id="ch" class="mr-0.5" />
+                            <span>Recuerdame</span>
+                        </div>
+                        <button class="font-bold mb-3">
+                            <a href="">¿Olvido la contraseña?</a>
+                        </button>
+                    </div>
+                    <button
+                        class="w-full border border-black bg-black text-white p-2 rounded-lg mb-6 hover:border hover:border-gray-400 hover:bg-white hover:text-black">
+                        <input type="submit" />
+                        Ingresar
+                    </button>
+
+                    <button class="w-full border border-gray-400 p-2 rounded-lg mb-6 hover:bg-black hover:text-white">
+                        <img src="img/google.webp" alt="img" class="w-8 h-8 inline mr-1" />
+                        <input type="submit" />
+                        Ingresar con Google
+                    </button>
+                </form>
+                <div class="text-center text-gray-600">
+                    ¿No tienes cuenta?
+                    <button class="font-bold text-black">Registrate</button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="img/tumblr_oer793zz1Z1ufvrkqo1_540.gif" alt="img" class="w-[400px] h-full hidden rounded-r 2xl md:block object-cover">
+                <div class="absolute hidden botton-10 right-[76px] p-6 bg-white bg-opacity-30 background-blur-sm rounded-xl drop-shadow-lg md:block"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
